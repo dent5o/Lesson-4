@@ -1,0 +1,302 @@
+/* &display=swap - добавить в конце строки при использовании плагина Google Fonts 
+&subset=cyrillic-ext - добавить (без пробела) к выше указанному для работы кириллического начертания*/
+
+@import url(https://fonts.googleapis.com/css?family=Open+Sans:regular,700,800,900&display=swap&subset=cyrillic-ext);
+
+@import url(https://fonts.googleapis.com/css?family=Merriweather:regular,700,900&display=swap&subset=cyrillic-ext);
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Black.woff2') format('woff2'),
+        url('Montserrat-Black.woff') format('woff');
+    font-weight: 900;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Bold.woff2') format('woff2'),
+        url('Montserrat-Bold.woff') format('woff');
+    font-weight: bold;
+    font-style: normal;
+    font-display: swap;
+}
+
+@font-face {
+    font-family: 'Montserrat';
+    src: url('Montserrat-Regular.woff2') format('woff2'),
+        url('Montserrat-Regular.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+    font-display: swap;
+}
+
+/* ОБНУЛЕНИЕ СТИЛЕЙ */
+*,
+*::before,
+*::after {
+	margin: 0;
+	padding: 0;
+	border: 0;
+}
+li {
+	list-style: none;
+}
+a,
+a:visited {
+	text-decoration: none;
+}
+a:hover {
+	text-decoration: none;
+}
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+	font-weight: inherit;
+	font-size: inherit;
+}
+img {
+	vertical-align: top;
+}
+html {
+	font-size: 18px;
+}
+body {
+	font-family: "Open Sans", sans-serif;
+	line-height: 1;
+}
+/* ------------------------------ */
+
+h1 {
+	font-size: 44px;
+	font-weight: 900;
+	letter-spacing: 3px;
+}
+
+h2 {
+	font-size: 32px;
+	font-weight: 700;
+	letter-spacing: 2px;
+	padding-bottom: 30px;
+}
+
+span {
+	font-weight: 800;
+	color: #006400;
+}
+
+.wrapper {
+	margin: 0 auto;
+	padding-top: 30px;
+	width: 1140px;
+	text-align: center;
+}
+
+.subtitle {
+	padding: 30px 0;
+	font-weight: 28px;
+	color: #6495ed;
+}
+
+.block {
+	padding: 25px 0;
+	border-bottom: 2px dotted #80808052;
+}
+
+.text {
+	text-align: left;
+	line-height: 150%;
+}
+
+.text-merriweather {
+	font-family: "Merriweather", serif;
+}
+
+.text-montserrat {
+	font-family: "Montserrat", sans-serif;
+}
+
+.f-name {
+	font-weight: 900;
+	color: #2206a0d8;
+	letter-spacing: 1px;
+}
+
+.f-style {
+	font-weight: 700;
+	color: #a006069f;
+}
+
+.f-link {
+	font-weight: 700;
+	color: #dc143c;
+	letter-spacing: 1px;
+}
+
+.block-1 .text {
+	padding: 10px 0;
+	text-align: justify;
+}
+
+.block-2 .text {
+	padding: 10px 0 10px 150px;
+}
+
+.text .paragraph {
+	padding-left: 50px;
+}
+
+.text-condition {
+	padding-bottom: 20px;
+}
+
+.condition {
+	font-weight: 700;
+	color: #483d8b;
+	text-align: left;
+}
+
+.block-3 .condition {
+	padding-bottom: 10px;
+	color: #ff0000;
+}
+
+.example {
+	text-align: left;
+	padding-left: 30px;
+}
+
+.example p {
+	padding: 5px 0;
+	line-height: 130%;
+}
+
+.example code {
+	font-weight: 700;
+	padding-right: 25px;
+	color: #2fe0ff;
+}
+
+.example-1 .ex-1 {
+	color: #ff8c00;
+}
+
+.example-1 .ex-2 {
+	color: #00ced1;
+}
+
+.example-1 .ex-3 {
+	color: #1e90ff;
+}
+
+.example-1 .ex-4 {
+	color: #ff00ff;
+}
+
+.example-1 .ex-5 {
+	color: #adff2f;
+}
+
+.example-2 .ex-1 {
+	text-align: center;
+}
+
+.example-2 .ex-2 {
+	text-align: justify;
+}
+
+.example-2 .ex-3 {
+	text-align: left;
+}
+
+.example-2 .ex-4 {
+	text-align: right;
+}
+
+.example-3 .ex-1 {
+	text-decoration: none;
+}
+
+.example-3 .ex-2 {
+	text-decoration: line-through;
+}
+
+.example-3 .ex-3 {
+	text-decoration: underline;
+}
+
+.example-3 .ex-4 {
+	text-decoration: overline;
+}
+
+.example-4 .ex-1 {
+	text-shadow: 1px 1px 1px #000;
+}
+
+.example-4 .ex-2 {
+	text-shadow: -5px -5px 1px #490404;
+}
+
+.example-5 .ex-1 {
+	text-transform: capitalize;
+}
+
+.example-5 .ex-2 {
+	text-transform: lowercase;
+}
+
+.example-5 .ex-3 {
+	text-transform: uppercase;
+}
+
+.example-5 .ex-4 {
+	text-transform: none;
+}
+
+.example-6 .ex-1 {
+	line-height: 120%;
+}
+
+.example-6 .ex-2 {
+	line-height: 150%;
+}
+
+.example-6 .ex-3 {
+	line-height: 170%;
+}
+
+.example-6 .ex-4 {
+	line-height: 200%;
+}
+
+.example-7 .ex-1 {
+	letter-spacing: 1px;
+}
+
+.example-7 .ex-2 {
+	letter-spacing: 2px;
+}
+
+.example-7 .ex-3 {
+	letter-spacing: 5px;
+}
+
+.example-7 .ex-4 {
+	letter-spacing: 10px;
+}
+
+.example-8 .ex-1 {
+	text-indent: 50px;
+}
+
+.example-8 .ex-2 {
+	text-indent: 100px;
+}
+
+.example-8 .ex-3 {
+	text-indent: 150px;
+}

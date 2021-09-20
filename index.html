@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="css/style.css">
+    <title>Lesson-4</title>
+</head>
+<body>
+    <header>
+        <div class="wrapper">
+            <h1>Работа со шрифтами и текстом</h1>
+            <p class="subtitle">Домашнее задание к 4 уроку</p>
+        </div>
+    </header>
+    <main>
+        <div class="wrapper">
+            <div class="block block-1">
+                <h2>Объявление шрифтов</h2>
+                <div class="text text-sans">
+                    <p>
+                        Привет, я <span class="f-name">Open Sans</span>, основной шрифт этой страницы. Я живу <a class="f-link" target="_blank" href="https://fonts.google.com/specimen/Open+Sans?subset=cyrillic&query=open+sans">тут</a> и подключен удаленно. Если меня не будет на месте, то меня заменит любой шрифт без засечек <span class="f-style">sans-serif</span>.
+                    </p>
+                </div>
+                <div class="text text-merriweather">
+                    <p>
+                        Привет, я <span class="f-name">Merriweather</span>, дополнительный шрифт этой страницы. Я живу <a class="f-link" target="_blank" href="https://fonts.google.com/specimen/Merriweather?subset=cyrillic&query=merri">тут</a> и подключен удаленно. Если меня не будет на месте, то меня заменит любой шрифт с засечками <span class="f-style">serif</span>.
+                    </p>
+                </div>
+                <div class="text text-montserrat">
+                    <p>
+                        Привет, я <span class="f-name">Montserrat</span>, ещё один дополнительный шрифт этой страницы. Я скачан <a class="f-link" target="_blank" href="https://webfonts.pro/base-web-fonts/sans-serif-grotesque/604-montserrat.html">тут</a>, подключен локально и живу в папке <span>fonts</span>. Если со мной что-то случится и я пропаду, то меня заменит основной шрифт или любой шрифт без засечек <span class="f-style">sans-serif</span>.
+                    </p>
+                </div>
+            </div>
+            <div class="block block-2">
+                <h2>Наследование свойств</h2>
+                <p class="condition">
+                    Вариант, когда блоку не прописан шрифт:
+                </p>
+                <div class="text text-sans">
+                    <p>
+                        Я блок текста. Я наследую свойства родителя и мой шрифт <span class="f-name">Open Sans</span>.
+                    </p>
+                    <div class="paragraph">
+                        <p>
+                            Я параграф в параграфе. Я тоже наследую свойства родителя. Мой шрифт также <span class="f-name">Open Sans</span>.
+                        </p>
+                        <div class="paragraph">
+                            <p>
+                                Я еще один параграф в параграфе. Со мной та же история. Мой шрифт <span class="f-name">Open Sans</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="condition">
+                    Блоку прописан шрифт <span>Merriweather</span>:
+                </p>
+                <div class="text text-merriweather">
+                    <p>
+                        Я блок текста. Я наследую свойства родителя и мой шрифт <span class="f-name">Merriweather</span>.
+                    </p>
+                    <div class="paragraph">
+                        <p>
+                            Я параграф в параграфе. Я тоже наследую свойства родителя. Мой шрифт также <span class="f-name">Merriweather</span>.
+                        </p>
+                        <div class="paragraph">
+                            <p>
+                                Я еще один параграф в параграфе. Со мной та же история. Мой шрифт <span class="f-name">Merriweather</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+                <p class="condition">
+                    Блоку прописан шрифт <span>Montserrat</span>:
+                </p>
+                <div class="text text-montserrat">
+                    <p>
+                        Я блок текста. Я наследую свойства родителя и мой шрифт <span class="f-name">Montserrat</span>.
+                    </p>
+                    <div class="paragraph">
+                        <p>
+                            Я параграф в параграфе. Я тоже наследую свойства родителя. Мой шрифт также <span class="f-name">Montserrat</span>.
+                        </p>
+                        <div class="paragraph">
+                            <p>
+                                Я еще один параграф в параграфе. Со мной та же история. Мой шрифт <span class="f-name">Montserrat</span>.
+                            </p>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="block block-3">
+                <h2>Свойства</h2>
+                <div class="text-condition">
+                    <p class="condition">
+                        text-color:
+                    </p>
+                    <div class="example example-1">
+                        <p class="ex-1"><code>color: #ff8c00</code> Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p class="ex-2"><code>color: #00ced1</code> Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p class="ex-3"><code>color: #1e90ff</code> Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p class="ex-4"><code>color: #ff00ff</code> Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p class="ex-5"><code>color: #adff2f</code> Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                    </div>
+                </div>
+                <div class="text-condition">
+                    <p class="condition">
+                        text-align:
+                    </p>
+                    <div class="example example-2">
+                        <p><code>text-align: center</code></p>
+                        <p class="ex-1">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>text-align: justify</code></p>
+                        <p class="ex-2">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>text-align: left</code></p> 
+                        <p class="ex-3">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>text-align: right</code></p>
+                        <p class="ex-4">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                    </div>
+                </div>
+                <div class="text-condition">
+                    <p class="condition">
+                        text-decoration:
+                    </p>
+                    <div class="example example-3">
+                        <p><code>text-decoration: none</code></p>
+                        <p class="ex-1">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>text-decoration: line-through</code></p>
+                        <p class="ex-2">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>text-decoration: underline</code></p>
+                        <p class="ex-3">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>text-decoration: overline</code></p>
+                        <p class="ex-4">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                    </div>
+                </div>
+                <div class="text-condition">
+                    <p class="condition">
+                        text-shadow:
+                    </p>
+                    <div class="example example-4">
+                        <p><code>text-shadow: 1px 1px 1px #000</code></p>
+                        <p class="ex-1">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>text-shadow: -5px -5px 1px #000</code></p>
+                        <p class="ex-2">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                    </div>
+                </div>
+                <div class="text-condition">
+                    <p class="condition">
+                        text-transform:
+                    </p>
+                    <div class="example example-5">
+                        <p><code>text-transform: capitalize</code></p>
+                        <p class="ex-1">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>text-transform: lowercase</code></p>
+                        <p class="ex-2">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>text-transform: uppercase</code></p>
+                        <p class="ex-3">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>text-transform: none</code></p>
+                        <p class="ex-4">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                    </div>
+                </div>
+                <div class="text-condition">
+                    <p class="condition">
+                        line-height:
+                    </p>
+                    <div class="example example-6">
+                        <p><code>line-height: 120%</code></p>
+                        <p class="ex-1">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>line-height: 150%</code></p>
+                        <p class="ex-2">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>line-height: 170%</code></p>
+                        <p class="ex-3">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>line-height: 200%</code></p>
+                        <p class="ex-4">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                    </div>
+                </div>
+                <div class="text-condition">
+                    <p class="condition">
+                        letter-spacing:
+                    </p>
+                    <div class="example example-7">
+                        <p><code>letter-spacing: 1px</code></p>
+                        <p class="ex-1">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>letter-spacing: 2px</code></p>
+                        <p class="ex-2">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>letter-spacing: 5px</code></p>
+                        <p class="ex-3">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>letter-spacing: 10px</code></p>
+                        <p class="ex-4">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                    </div>
+                </div>
+                <div class="text-condition">
+                    <p class="condition">
+                        text-indent:
+                    </p>
+                    <div class="example example-8">
+                        <p><code>text-indent: 50px</code></p>
+                        <p class="ex-1">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>text-indent: 100px</code></p>
+                        <p class="ex-2">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                        <p><code>text-indent: 150px</code></p>
+                        <p class="ex-3">Я текст-рыба. Я текст-рыба. Я текст-рыба.Я текст-рыба. Я текст-рыба. Я текст-рыба.</p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer>
+        footer
+    </footer>
+</body>
+</html>
